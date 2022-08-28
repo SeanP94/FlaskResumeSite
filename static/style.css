@@ -1,0 +1,33 @@
+header {  
+    padding: 5px;
+    position: fixed;
+    z-index: 10;
+    top: 0px;
+    background-color: #888;
+    height: 150px;
+    width:  100%;
+  
+  }
+  
+  footer {
+    z-index: 10;
+    bottom: 0px;
+    position: fixed;
+    background-color: #999;
+    height: 100px;
+    width:  100%;
+  }
+  
+  body {
+    background-color: #ccc;
+  }
+  
+  /* Classes */
+  
+  .center {
+    position: fixed;
+    background-color: #777;
+    width: 200px;
+    height: 100%;
+    left: 0px;
+  }

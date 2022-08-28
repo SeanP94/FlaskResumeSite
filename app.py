@@ -20,14 +20,17 @@ Weekend Goal:
     Have SOMETHING that looks like an okay website.
     Use Codepen to troubleshoot ideas.
 '''
+from flask import Flask, render_template # And templates..
+from logging import FileHandler,WARNING
 
-from flask import Flask # And templates..
+
 app = Flask(__name__)
-
+file_handler = FileHandler('errorlog.txt')
+file_handler.setLevel(WARNING)
 
 @app.route('/')
 def index():
-    return "<h1>Hello World</h1>"
+    return render_template("index.html")
 
 
 # TODO:
@@ -35,3 +38,8 @@ def index():
 @app.route('/jumpgame')
 def jumpgame():
     pass
+
+
+if __name__ == '__main__':
+   app.run()
+
