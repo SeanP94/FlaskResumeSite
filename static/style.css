@@ -1,4 +1,8 @@
-
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -24,25 +28,35 @@ footer {
 }
 
 header {
+  display: flex;
   position: relative;
   background-color: #123861;
+  background-image: radial-gradient(#1C5694, #123861);
   grid-area: header;
   box-shadow: 5px 5px 50px #000;
 }
+
+.thumbnail {
+  margin-top: 10px;
+  display: flex;
+}
+
 
 header button {
   font-size: 24px;
   font-weight: bold;
   text-shadow: 4px 4px 5px #123861;
-  background-color: #5C80A7;
+  background-image: radial-gradient(#AFC6DE, #5C80A7);
   height: 75px;
   border: #0B0E3B 3px solid;
-  transition: background-color 750ms;
+  transition: background-image 750ms;
   
 }
 
 .drop-down-button {
   width: 150px;
+  height: 60px;
+  
 }
 
 .link-button {
@@ -53,7 +67,7 @@ header button {
 
 header button:hover {
   cursor: pointer;
-  background-color: #1C5694;
+  background-image: radial-gradient(#5C80A7, #AFC6DE);
 }
 
 .button-container {
