@@ -1,8 +1,4 @@
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
+
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -15,36 +11,67 @@ body {
     'body'
     'footer';
   grid-template-columns: 100%;
-  grid-template-rows: 200px 100% 200px;
+  grid-template-rows: 100px 100% 200px;
 }
 
 header,
 main,
 nav,
 footer {
-  background-color: steelblue;
   color: #fff;
-  padding: 20px;
-  border: #5C80A7 1px solid;
+  padding: 20px; /* Remove later */
+  
 }
 
 header {
   position: relative;
   background-color: #123861;
   grid-area: header;
+  box-shadow: 5px 5px 50px #000;
 }
 
 header button {
   font-size: 24px;
+  font-weight: bold;
+  text-shadow: 4px 4px 5px #123861;
   background-color: #5C80A7;
+  height: 75px;
+  border: #0B0E3B 3px solid;
+  transition: background-color 750ms;
+  
+}
+
+.drop-down-button {
   width: 150px;
-  height: 100px;
-  border: #2B82E0 1px solid;
+}
+
+.link-button {
+  height: 45px;
+  width: 45px;
+  border-radius: 20px;
 }
 
 header button:hover {
-  background-color: #000;
+  cursor: pointer;
+  background-color: #1C5694;
 }
+
+.button-container {
+  position: absolute;
+  display: flex;
+  width: 500px;
+  bottom: 0;
+  right: 0;
+}
+
+.button-container-links {
+  position: absolute;
+  display: flex;
+  width: auto;
+  bottom: 0;
+  right: 0;
+}
+
 
 
 main {

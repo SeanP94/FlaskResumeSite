@@ -3,19 +3,29 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://kit.fontawesome.com/fee07c3811.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="{{ url_for('static', filename='/style.css') }}">
 		<title>Sean's Resume Website</title>
 	</head>
 	<body>
 		<header id="banner" class="grid">
-		  <h1>Banner</h1>
+		  <div class="thumbnail">
+			<i class="fa-solid fa-laptop-code"></i>
+		  </div>
+		  <div>
+			Sean P.
+		  </div>
 		  <section class="banner-buttons">
-			<button>button1</button>
-			<button>button2</button>
-			<button>button3</button>
+			<div class="button-container">
+			  <button class="drop-down-button">Projects</button>
+			  <button class="drop-down-button">Resume</button>
+			</div>
+			<div class="button-container-links">
+			  <button class="link-button"><i class="fa-brands fa-linkedin fa-lg"></i></button>
+			  <button class="link-button"><i class="fa-brands fa-github fa-lg"></i></button>
+			</div>
 		  </section>
 		</header>
-		
 		<main id="main">
 		  <h1>Body</h1>
 		</main>
@@ -25,4 +35,6 @@
 		</footer>
 	  
 	  </body>
+	  
+	  
 </html>
